@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Icono de carrito -->
+<div id="icono-carrito">
+  🛒 <span id="cantidad-carrito">0</span>
+</div>
+
+<!-- Panel desplegable del carrito -->
+<div id="panel-carrito" class="oculto">
+  <h3>Tu carrito</h3>
+  <div id="productos-carrito"></div>
+  <div class="carrito-total">
+    <strong>Total:</strong> $<span id="total-carrito">0</span>
+  </div>
+  <button id="vaciar-carrito">Vaciar carrito</button>
+  <button id="comprar">Comprar</button>
+</div>
+
+<!-- Notificación -->
+<div id="notificacion" class="oculto">Producto agregado al carrito</div>
+
+  </div>
+</section>
+
+  <header>
+    <div class="header-content">
+      <h1>Tienda de Ropa</h1>
+      <p>Moda femenina</p>
+    </div>
+  </header>
+
+  <nav class="menu">
+  <ul>
+    <li><button class="filtro" data-categoria="conjunto formal">conjunto</button></li>
+    <li><button class="filtro" data-categoria="vestido">Vestido</button></li>
+    <li><button class="filtro" data-categoria="sueter">Sueter</button></li>
+    <li><button class="filtro" data-categoria="tapado">Tapado</button></li>
+    <li><button id="btn-ofertas">Ofertas</button></li>
+  </ul>
+  </nav>
+
+  <div class="buscador">
+    <input type="text" id="buscar" placeholder="Buscar producto por nombre..." />
+    <button id="btn-ver-todo">Ver todo</button> <!-- Botón ver todo junto al buscador -->
+  </div>
+
+  <main class="contenido">
+ <section class="catalogo">
+  <div class="producto-ind" data-categoria="conjunto formal">
+    <img src="./Recursos/set 2 piezas (2).jpeg" alt="Campera">
+    <h3>cojunto</h3>
+    <p>$4500</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind sin-stock" data-categoria="conjunto formal">
+    <img src="./Recursos/set 2 piezas.jpeg" alt="Blazer">
+    <h3>conjunto</h3>
+    <p>$12000</p>
+   <span class="stock-info">Sin stock</span>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <!-- NUEVOS PRODUCTOS 👇 -->
+  <div class="producto-ind" data-categoria="conjunto formal">
+    <img src="./Recursos/set.jpeg" alt="Jean azul">
+    <h3>conjunto</h3>
+    <p>$9800</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="conjunto formal">
+    <img src="./Recursos/set 2 piezas (3).jpeg" alt="blazer">
+    <h3>conjunto</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind"data-categoria="sueter">
+    <img src="./Recursos/sueter.jpeg" alt="Camisa beige">
+    <h3>Sueter</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind sin-stock" data-categoria="sueter">
+    <img src="./Recursos/sueter (2).jpeg" alt="Camisa beige">
+    <h3>sueter</h3>
+    <p>$7600</p>
+    <span class="stock-info">Sin stock</span>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="sueter">
+    <img src="./Recursos/sueter (3).jpeg" alt="blazer">
+    <h3>sueter</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind oferta" data-categoria="sueter">
+    <img src="./Recursos/sueter (4).jpeg" alt="Camisa beige">
+    <h3>sueter</h3>
+    <p class="precio-nuevo">$7600</p>
+  <span class="precio-anterior">$9500</span>
+    <button type="button" class="ver-ofertas"></button>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="vestido">
+    <img src="./Recursos/vestido rosa.jpeg" alt="Camisa beige">
+    <h3>Vestido</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="vestido">
+    <img src="./Recursos/vestido blanco.jpeg" alt="vestido">
+    <h3>Vestido</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="vestido">
+    <img src="./Recursos/VESTIDO ROJO.jpeg" alt="vestido">
+    <h3>Vestido</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+git
+  <div class="producto-ind oferta" data-categoria="vestido">
+    <img src="./Recursos/vestido azul.jpeg" alt="vestido">
+    <h3>vestido</h3>
+    <p class="precio-nuevo">$7600</p>
+  <span class="precio-anterior">$9500</span>
+    <button type="button" class="ver-ofertas"></button>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="tapado">
+    <img src="./Recursos/campera.jpeg" alt="blazer">
+    <h3>Tapado</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="tapado">
+    <img src="./Recursos/campera (2).jpeg" alt="Camisa beige">
+    <h3>Tapado</h3>g
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind" data-categoria="tapado">
+    <img src="./Recursos/campera (4).jpeg" alt="Camisa beige">
+    <h3>Tapado</h3>
+    <p>$7600</p>
+    <button>Agregar al carrito</button>
+  </div>
+
+  <div class="producto-ind oferta" data-categoria="tapado">
+    <img src="./Recursos/campera (3).jpeg" alt="blazer">
+    <h3>Tapado</h3>
+    <p class="precio-nuevo">$7600</p>
+  <span class="precio-anterior">$9500</span>
+    <button type="button" class="ver-ofertas"></button>
+    <button>Agregar al carrito</button>
+  </div>
+
+</section>
+
+      <!-- Agrega más productos aquí -->
+
+    <aside class="contacto">
+      <h3>Contacto</h3>
+      <form class="form-usuario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="3" placeholder="Deja tu comentario"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </aside>
+  </main>
+
+  <section class="opiniones">
+  <h2>Opiniones de nuestras clientas</h2>
+
+  <div class="opinion">
+    <p>"¡La calidad de la ropa es excelente! Voy a volver a comprar "</p>
+    <span>- Julieta R.</span>
+  </div>
+
+  <div class="opinion">
+    <p>"El envío fue rapidísimo y me encantó el empaque "</p>
+    <span>- Camila S.</span>
+  </div>
+
+  <div class="opinion">
+    <p>"Muy buena atención"</p>
+    <span>- Florencia M.</span>
+  </div>
+</section>
+
+  <footer>
+    <h5>&copy; 2025 Tienda de Ropa. Todos los derechos reservados.</h5>
+  </footer>
+  <footer class="footer-info">
+  <div class="metodos-pago">
+    <h4>Métodos de Pago</h4>
+    <ul>
+      <li>💳 Tarjeta de crédito / débito</li>
+      <li>📱 Transferencia bancaria</li>
+      <li>💲 Mercado Pago</li>
+    </ul>
+  </div>
+
+  <div class="envios">
+    <h4>Envíos</h4>
+    <ul>
+      <li>📦 A todo el país</li>
+      <li>⏱ Entrega en 3 a 5 días hábiles</li>
+    </ul>
+  </div>
+</footer>
+<script>
+  console.log('PRUEBA SCRIPT DIRECTO');
+</script>
+<script src="./script.js"></script>
+</body>
+</html>
